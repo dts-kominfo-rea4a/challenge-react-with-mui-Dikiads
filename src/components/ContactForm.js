@@ -39,7 +39,7 @@ const ContactForm = ({fnnewContact}) => {
                     <TextField id="filled-basic" label="Name" variant="filled" sx={{width: '100%', height: '20%'}}  value={newContact.name} onChange={ e => inputHandler('name', e.target.value)} required/><br/><br/>
                     <TextField id="filled-basic" label="Phone" variant="filled" sx={{width: '100%'}}  value={newContact.phone} onChange={e => inputHandler('phone', e.target.value)} type='number' required/><br/><br/>
                     <TextField id="filled-basic" label="Email" variant="filled" sx={{width: '100%'}}  value={newContact.email} onChange={e => inputHandler('email', e.target.value)} type='email' required/><br/><br/>
-                    <TextField id="filled-basic" label="Photo URL" variant="filled" sx={{width: '100%'}}  value={newContact.photo} onChange={e => inputHandler('photo', e.target.value)} required/><br/>
+                    <TextField id="filled-basic" label="Photo URL" variant="filled" sx={{width: '100%'}}  value={newContact.photo} onChange={e => inputHandler('photo', e.target.value)} type='email' required/><br/>
                     <CardActions >
                         <Button type='submit' variant="outlined" startIcon={<PersonAddIcon />} sx={{margin: '0.5em auto'}}>Add New</Button>
                     </CardActions>
